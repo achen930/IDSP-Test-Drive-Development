@@ -1,0 +1,19 @@
+{
+  "dependencies": {
+    "cookie-session": "^2.1.0",
+    "ejs": "^3.1.9",
+    "express": "^4.19.2"
+  },
+  "name": "test-driven-development",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.0"
+  }
+}
