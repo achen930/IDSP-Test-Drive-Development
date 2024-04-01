@@ -28,7 +28,7 @@ app.get('/', (req, res) => {
     res.render('login');
 })
 app.post('/', (req, res) => {
-    const { username } = req.body
+    const { username } = req.body // Annabelle: In actual application, would have to check users password as well
     const user = (db.users.filter((user) => user.username === username)).pop()
     console.log(user)
     if (user) {
@@ -45,6 +45,8 @@ app.get('/logout', (req, res) => {
 app.get('/albums', (req, res) => {
     const albums = getAlbums(req.session.userId)
     res.json(albums)
+
+    // Annabelle: returns user albums as expected when user is logged in
 })
 
 app.get('/posts', (req, res) => {
