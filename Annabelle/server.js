@@ -3,9 +3,9 @@ const express = require("express");
 const app = express();
 const port = 3000;
 
-const bodyParser = require("body-parser");
+const bodyParser = require("body-parser"); //angus: we can use this directly from express without the body-parser package
 app.use(express.static("public"));
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: false }));  
 
 app.set("view engine", "ejs");
 
