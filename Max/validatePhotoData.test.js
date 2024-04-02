@@ -1,4 +1,4 @@
-const isValidFileBuffer = require("./test");
+const isValidFileBuffer = require("./validatePhotoData");
 
 describe("File Buffer Validator", () => {
   test("validates a small file is within size limits", async () => {
